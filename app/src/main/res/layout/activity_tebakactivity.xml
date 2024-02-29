@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#D7E4C0"
+    android:padding="28dp"
+    tools:context=".TebakActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_tbk"
+        android:layout_width="wrap_content"
+        android:layout_height="328dp"
+        android:background="@android:color/white"
+        android:padding="28dp"
+
+        android:src="@drawable/anjing"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edt_jwb"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btn_jwb"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:text="Jawab"
+                android:textAllCaps="true"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck,TextSizeCheck" />
+        </LinearLayout>
+
+</LinearLayout>
